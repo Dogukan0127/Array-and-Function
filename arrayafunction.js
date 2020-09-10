@@ -85,5 +85,20 @@ do {
 while(aaa > dowhileNumberLenghtt);
 
 
+// Promise 
+
+let fpromise = new Promise (function (resolve ,reject){
+    if(true){
+        resolve("success");
+    }else{
+        reject("fail");
+    }
+});
+
+fpromise.than(function(data){
+    console.log(data)
+}).catch(function(data){
+    console.log(data)
+});
 
 
