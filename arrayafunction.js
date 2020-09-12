@@ -86,19 +86,34 @@ while(aaa > dowhileNumberLenghtt);
 
 
 // Promise 
-
-let fpromise = new Promise (function (resolve ,reject){
+/*
+const fpromise = new Promise (function (resolve ,reject){
     if(true){
         resolve("success");
     }else{
         reject("fail");
     }
-});
+})
 
-fpromise.than(function(data){
-    console.log(data)
-}).catch(function(data){
-    console.log(data)
-});
+fpromise.then(function  (data){
+    console.log(data);
+}).catch(function  (data2){
+    console.log(data2);
+})
 
+*/
+
+const sozVerdik = new Promise(function(resolve, reject){
+    if (false) {
+      resolve('İşlem tamam!');
+    } else {
+      reject('Bir sıkıntı var...');
+    }
+  })
+
+  sozVerdik.then(function(cevap){
+    console.log(cevap) // 'İşlem tamam!' yazısını basar
+  }).catch(function(hata){
+    console.log(hata) // 'Bir sıkıntı var...' yazısını basar
+  })
 
